@@ -22,12 +22,15 @@ const Mealinfo = () => {
   return (
     <>
     {
-      !id ? "data not found" :<div>
-      <div><img src={id.strMealThumb} alt="" /></div>
-      <div>
-        <h1>Recipe detail</h1>
-        <button>{id.strMeal}</button>
-        <h3>Instruction</h3>
+      !id ? "data not found" :
+      <div className='w-screen bg-black text-white md:h-screen h-auto flex md:flex-row flex-col'>
+      <div className='md:w-5xl w-64 m-12 md:m-0 h-72 md:h-full flex justify-center items-center  '>
+        <img className='w-2xl rounded-4xl ' src={id.strMealThumb} alt="" />
+        </div>
+      <div className='md:w-5xl w-screen  flex flex-col gap-7 md:py-8 px-5'>
+        <h1 className='font-bold text-4xl '>Recipe detail</h1>
+        <button className='bg-red-500 border-2 border-black rounded-2xl px-3 py-2 w-64'>{id.strMeal}</button>
+        <h3 className='text-3xl font-extrabold'>Instruction</h3>
         <p>{id.strInstructions}</p>
       </div>
     </div>

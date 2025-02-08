@@ -14,7 +14,7 @@ const Mealcard = ({detail}) => {
                 <div className='h-auto pb-5 w-80 rounded-2xl mx-10 my-5 text-white border-2 border-gray-300 overflow-hidden'>
                     <img className='w-full h-72  ' src={curr.strMealThumb} />
                     <h1 className='text-3xl my-3 text-center'>{curr.strMeal}</h1>
-                    <Link to={`/${curr.idMeal}`} className='px-5 mx-18 bg-blue-200 text-2xl border-2 border-white mt-5 rounded-2xl hover:bg-blue-800 hover:scale-75'>View more</Link>
+                    <Link to={`/${curr.idMeal}`} className='px-5 mx-14 md:mx-18 bg-blue-200 text-2xl border-2 border-white mt-5 rounded-2xl hover:bg-blue-800 hover:scale-75'>View more</Link>
 
                 </div>
             )
